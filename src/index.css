@@ -5,9 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  background-color: #00fff6;
+  color: #fff;
+  animation: buttonAN 3s;
+  /* margin: 0 auto; */
+}
+
+@keyframes buttonAN {
+  0% {
+    transform: translateX(-150px);
+    left: -150px;
+    opacity: 0;
+    transition-delay: 700ms;
+  }
+  70% {
+    transform: translateX(150px);
+
+    opacity: 100%;
+    transition-delay: 900ms;
+  }
+  100% {
+    transform: translateY(150px);
+  }
 }
